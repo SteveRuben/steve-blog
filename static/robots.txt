@@ -1,2 +1,3 @@
 User-agent: *
+sitemap: https://steve.abodah.fr/sitemap.xml
 Disallow:

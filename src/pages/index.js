@@ -1,69 +1,179 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
+import GitHubButton from 'react-github-btn'
+import { graphql, Link } from 'gatsby'
+import Layout from '../layout'
+import PostListing from '../components/PostListing'
+import ProjectListing from '../components/ProjectListing'
+import SimpleListing from '../components/SimpleListing'
+import SEO from '../components/SEO'
+import config from '../../data/SiteConfig'
+import projects from '../../data/projects'
+import speaking from '../../data/speaking'
+import podcasts from '../../data/podcasts'
+import quotes from '../../data/quotes'
+import tania from '../../content/images/profile.jpg'
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+export default class Index extends Component {
+  render() {
+    const { data } = this.props
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+    const latestPostEdges = data.latest.edges
+    const popularPostEdges = data.popular.edges
 
-  return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <Bio />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
-    </Layout>
-  )
+    return (
+      <Layout>
+        <Helmet title={`${config.siteTitle} – Full Stack Software Developer`} />
+        <SEO />
+        <div className="container">
+          <div className="lead">
+            <div className="elevator">
+              <h1>{`Hey, I'm Steve 👋`} </h1>
+              <p>
+                {`I'm a full stack software developer creating `}
+                <a href="https://github.com/tryptich" target="_blank" rel="noopener noreferrer">
+                  open source
+                </a>{' '}
+                projects and <Link to="/blog">writing</Link> about modern JavaScript, Node.js, and
+                development.
+              </p>
+              <div className="social-buttons">
+                <GitHubButton
+                  href="https://github.com/tryptich"
+                  data-size="large"
+                  data-show-count="true"
+                >
+                  Steve Ruben
+                </GitHubButton>
+              </div>
+            </div>
+            <div className="newsletter-section">
+              <img src={tania} className="newsletter-avatar" alt="Steve Ruben" />
+              <div>
+                <h3>Email Newsletter</h3>
+                <p>
+                  I write tutorials and stuff both in french and in englsih. Get an update when something new comes out by signing up below!
+                </p>
+                <a className="button" href="https://taniarascia.substack.com">
+                  Subscribe
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container front-page">
+          <section className="section">
+            <h2>
+              Latest Articles
+              <Link to="/blog" className="view-all">
+                View all
+              </Link>
+            </h2>
+            <PostListing simple postEdges={latestPostEdges} />
+          </section>
+
+          <section className="section">
+            <h2>
+              Most Popular
+              <Link to="/categories/popular" className="view-all">
+                View all
+              </Link>
+            </h2>
+            <PostListing simple postEdges={popularPostEdges} />
+          </section>
+
+          <section className="section">
+            <h2>Open Source Projects</h2>
+            <ProjectListing projects={projects} />
+          </section>
+
+          <section className="section">
+            <h2>Interviews</h2>
+            <SimpleListing simple data={podcasts} />
+          </section>
+
+          <section className="section">
+            <h2>Talks</h2>
+            <SimpleListing simple data={speaking} />
+          </section>
+        </div>
+        <div className="gradient-section">
+          <div className="container">
+            <h2>Other People Say...</h2>
+          </div>
+          <div className="quotations">
+            {quotes.map(quote => (
+              <blockquote className="quotation" key={quote.name}>
+                <p>{quote.quote}</p>
+                <cite>— {quote.name}</cite>
+              </blockquote>
+            ))}
+          </div>
+        </div>
+      </Layout>
+    )
+  }
 }
 
-export default BlogIndex
-
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+  query IndexQuery {
+    latest: allMarkdownRemark(
+      limit: 5
+      sort: { fields: [fields___date], order: DESC }
+      filter: { frontmatter: { template: { eq: "post" } } }
+    ) {
       edges {
         node {
-          excerpt
           fields {
             slug
+            date
           }
+          excerpt
+          timeToRead
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
-            description
+            tags
+            categories
+            thumbnail {
+              childImageSharp {
+                fixed(width: 150, height: 150) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+            date
+            template
+          }
+        }
+      }
+    }
+    popular: allMarkdownRemark(
+      limit: 9
+      sort: { fields: [fields___date], order: DESC }
+      filter: { frontmatter: { categories: { eq: "Popular" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            date
+          }
+          excerpt
+          timeToRead
+          frontmatter {
+            title
+            tags
+            categories
+            thumbnail {
+              childImageSharp {
+                fixed(width: 150, height: 150) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+            date
+            template
           }
         }
       }
