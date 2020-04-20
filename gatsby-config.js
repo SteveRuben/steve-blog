@@ -104,6 +104,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://abodah.us4.list-manage.com/subscribe/post?u=e8180af439093b6af144b0c37&amp;id=86e5ecda90',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-feed',
       options: {
         setup(ref) {

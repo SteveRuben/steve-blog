@@ -7,6 +7,7 @@ import PostListing from '../components/PostListing'
 import ProjectListing from '../components/ProjectListing'
 import SimpleListing from '../components/SimpleListing'
 import SEO from '../components/seo'
+import EmailForm from '../components/EmailForm'
 import config from '../../data/SiteConfig'
 import projects from '../../data/projects'
 import speaking from '../../data/speaking'
@@ -54,9 +55,7 @@ export default class Index extends Component {
                 <p>
                   I write tutorials and stuff both in french and in englsih. Get an update when something new comes out by signing up below!
                 </p>
-                <a className="button" href="https://taniarascia.substack.com">
-                  Subscribe
-                </a>
+                <EmailForm/>
               </div>
             </div>
           </div>
