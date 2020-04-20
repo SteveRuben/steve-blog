@@ -2,7 +2,7 @@
 date: 2020-04-20
 title: 'Career Notes for Engineers and Designers - Part 1'
 template: post
-thumbnail: '../images/career.svg'
+thumbnail: '../images/career.png'
 slug: career-notes-part-one
 published: true
 categories:
