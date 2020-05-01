@@ -14,3 +14,5 @@ Or all in one line:
 ```sh
 for file in *.md; do mv "$file" "${file%.md}.mdx"; done
 ```
+
+https://github.com/taniarascia/taniarascia.com/blob/master/data/podcasts.js
