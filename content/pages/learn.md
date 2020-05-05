@@ -10,7 +10,7 @@ There's a lot I want to learn, and a lot I've learned and documented. Here's whe
 
 My current focus is **Computer Science** fundamentals and all things **JavaScript**. (They stay here until I write about it.)
 
-### JavaScript
+### JavaScript / Typescript
 
 #### Concepts
 
@@ -32,8 +32,8 @@ My current focus is **Computer Science** fundamentals and all things **JavaScrip
 
 ### Tools/Frameworks/Concepts
 
-- [x] Webpack
-- [x] VueX
+- [] Webpack
+- [] Angular
 
 ### Networking
 
@@ -47,31 +47,31 @@ My current focus is **Computer Science** fundamentals and all things **JavaScrip
   - [x] Size complexity
   - [x] Time complexity
 - [ ] **Sorting**
-  - [ ] Bubble
-  - [ ] Insertion
-  - [ ] Selection
-  - [ ] Merge
+  - [x] Bubble
+  - [x] Insertion
+  - [x] Selection
+  - [x] Merge
   - [ ] Heap
   - [ ] Quick
-- [ ] **Searching**
-  - [ ] Binary search
-- [ ] Pattern matching
-- [ ] Recursion
+- [x] **Searching**
+  - [x] Binary search
+- [x] Pattern matching
+- [x] Recursion
 
 #### Data Structures
 
-- [ ] Lists
-  - [ ] Arrays
-  - [ ] Linked lists
-    - [ ] Singly linked lists
-    - [ ] Doubly linked lists
-- [ ] Stack
-- [ ] Queue
-- [ ] Hash tables
-- [ ] Trees
-  - [ ] Binary tree
+- [x] Lists
+  - [x] Arrays
+  - [] Linked lists
+    - [x] Singly linked lists
+    - [x] Doubly linked lists
+- [x] Stack
+- [x] Queue
+- [x] Hash tables
+- [x] Trees
+  - [x] Binary tree
   - [ ] Segment tree
-- [ ] Heap
+- [x] Heap
 - [ ] Graph
 
 ## Learned
@@ -124,61 +124,59 @@ This is not everything I know, but a good amount of the things I've documented s
 
 #### Frameworks/Libraries
 
-- [x] [Vue.js](/getting-started-with-vue)
-- [x] [React](/getting-started-with-react/)
-  - [x] [Hooks API](/crud-app-in-react-with-hooks/)
-  - [x] [Context API](https://www.taniarascia.com/using-context-api-in-react/)
-  - [x] [Content Editable](/content-editable-elements-in-javascript-react/)
-- [x] [Redux](redux-react-guide)
-- [x] [jQuery](/how-to-use-jquery-a-javascript-library/)
+- [ ] [Vue.js](/getting-started-with-vue)
+- [ ] [React](/getting-started-with-react/)
+  - [ ] [Hooks API](/crud-app-in-react-with-hooks/)
+  - [ ] [Context API](https://www.taniarascia.com/using-context-api-in-react/)
+  - [ ] [Content Editable](/content-editable-elements-in-javascript-react/)
+- [ ] [Redux](redux-react-guide)
+- [ ] [jQuery](/how-to-use-jquery-a-javascript-library/)
 
 #### Databases/APIs
 
-- [x] [SQL](/overview-of-sql-commands-and-pdo-operations/)
-- [x] [Production Node.js, Express REST API with PostgreSQL + Deploying to Heroku](/node-express-postgresql-heroku)
+- [ ] [SQL](/overview-of-sql-commands-and-pdo-operations/)
+- [ ] [Production Node.js, Express REST API with PostgreSQL + Deploying to Heroku](/node-express-postgresql-heroku)
 
 ### DevOps, Automation, Testing
 
-- [x] [AWS S3, EC2, RDS, Route 53](/getting-started-with-aws-setting-up-a-virtual-server/)
-- [x] [Vagrant/VirtualBox](/what-are-vagrant-and-virtualbox-and-how-do-i-use-them/)
-- [x] [Docker and creating a CI/CD pipeline, JWT client side handling](/continuous-integration-pipeline-docker)
-- [x] [JavaScript Unit Tests with Jest or Mocha](/unit-testing-in-javascript/)
+- [ ] [AWS S3, EC2, RDS, Route 53](/getting-started-with-aws-setting-up-a-virtual-server/)
+- [ ] [Vagrant/VirtualBox](/what-are-vagrant-and-virtualbox-and-how-do-i-use-them/)
+- [ ] [Docker and creating a CI/CD pipeline, JWT client side handling](/continuous-integration-pipeline-docker)
+- [ ] [JavaScript Unit Tests with Jest or Mocha](/unit-testing-in-javascript/)
 
 ### CSS
 
-- [x] [CSS](/overview-of-css-concepts/)
-  - [x] [CSS Syntax](/overview-of-css-concepts/#css-syntax)
-  - [x] [CSS Selectors](/overview-of-css-concepts/#css-selectors)
-  - [x] [CSS Specificity](/overview-of-css-concepts/#css-specificity)
-  - [x] [CSS Properties](/overview-of-css-concepts/#css-properties)
-  - [x] [CSS Spacing Out](/overview-of-css-concepts/#spacing-out-padding-and-margins)
-  - [x] [CSS Box Model](/overview-of-css-concepts/#box-model)
-  - [x] [CSS Shorthand Properties](/overview-of-css-concepts/#shorthand-properties)
-  - [x] [CSS Layouts: Display](/overview-of-css-concepts/#layouts-display)
-  - [x] [CSS Layouts: Positioning](/overview-of-css-concepts/#layouts-positioning)
-  - [x] [CSS Layouts: Flex](/overview-of-css-concepts/#layouts-flex)
-- [x] [CSS Responsive (Media Queries, Breakpoints)](/you-dont-need-a-framework/)
-- [x] [CSS Shapes](https://tympanus.net/codrops/2018/11/29/an-introduction-to-css-shapes/)
-- [x] [Sass/SCSS](/learn-sass-now/)
-- [x] [Bootstrap](/what-is-bootstrap-and-how-do-i-use-it/)
+- [ ] [CSS](/overview-of-css-concepts/)
+  - [ ] [CSS Syntax](/overview-of-css-concepts/#css-syntax)
+  - [ ] [CSS Selectors](/overview-of-css-concepts/#css-selectors)
+  - [ ] [CSS Specificity](/overview-of-css-concepts/#css-specificity)
+  - [ ] [CSS Properties](/overview-of-css-concepts/#css-properties)
+  - [ ] [CSS Spacing Out](/overview-of-css-concepts/#spacing-out-padding-and-margins)
+  - [ ] [CSS Box Model](/overview-of-css-concepts/#box-model)
+  - [ ] [CSS Shorthand Properties](/overview-of-css-concepts/#shorthand-properties)
+  - [ ] [CSS Layouts: Display](/overview-of-css-concepts/#layouts-display)
+  - [ ] [CSS Layouts: Positioning](/overview-of-css-concepts/#layouts-positioning)
+  - [ ] [CSS Layouts: Flex](/overview-of-css-concepts/#layouts-flex)
+- [ ] [CSS Responsive (Media Queries, Breakpoints)](/you-dont-need-a-framework/)
+- [ ] [CSS Shapes](https://tympanus.net/codrops/2018/11/29/an-introduction-to-css-shapes/)
+- [ ] [Sass/SCSS](/learn-sass-now/)
+- [ ] [Bootstrap](/what-is-bootstrap-and-how-do-i-use-it/)
 
 ### Tools/Frameworks/Concepts
 
 - [x] **Git**
-  - [x] [Push, Pull, Commit](/getting-started-with-git/)
-  - [x] **Merge, Rebase, Branch, Stash, Pull Request**
-- [x] [Mac Development](/setting-up-a-brand-new-mac-for-development/)
-- [x] [Command Line](/how-to-use-the-command-line-for-apple-macos-and-linux/)
-- [x] [Grunt](/getting-started-with-grunt-and-sass/)
-- [x] [Gulp](/getting-started-with-gulp/)
-- [x] [Node.js Ecosystem](/how-to-install-and-use-node-js-and-npm-mac-and-windows/)
-- [x] [Express](https://code.tutsplus.com/tutorials/code-your-first-api-with-nodejs-and-express-set-up-the-server--cms-31698)
-- [x] [LAMP Environment](/local-environment/)
-- [x] [Apache/Virtual Hosts](/setting-up-virtual-hosts/)
-- [x] [JSON](/how-to-use-json-data-with-php-or-javascript/)
-- [x] [REST API](/how-to-connect-to-an-api-with-javascript/)
-- [x] [SSL/TLS](/https-ssl-tls-certificate-how-to/)
-- [x] [Static Site Generators](/make-a-static-website-with-jekyll/)
-- [x] [Bash](/how-to-create-and-use-bash-scripts/)
-- [x] [Object-Oriented Paradigm](/object-oriented-pattern-javascript-php-classes/)
+  - [ ] [Push, Pull, Commit](/getting-started-with-git/)
+  - [ ] **Merge, Rebase, Branch, Stash, Pull Request**
+- [ ] [Command Line](/how-to-use-the-command-line-for-apple-macos-and-linux/)
+- [ ] [Gulp](/getting-started-with-gulp/)
+- [ ] [Node.js Ecosystem](/how-to-install-and-use-node-js-and-npm-mac-and-windows/)
+- [ ] [Express](https://code.tutsplus.com/tutorials/code-your-first-api-with-nodejs-and-express-set-up-the-server--cms-31698)
+- [ ] [LAMP Environment](/local-environment/)
+- [ ] [Apache/Virtual Hosts](/setting-up-virtual-hosts/)
+- [ ] [JSON](/how-to-use-json-data-with-php-or-javascript/)
+- [ ] [REST API](/how-to-connect-to-an-api-with-javascript/)
+- [ ] [SSL/TLS](/https-ssl-tls-certificate-how-to/)
+- [ ] [Static Site Generators](/make-a-static-website-with-jekyll/)
+- [ ] [Bash](/how-to-create-and-use-bash-scripts/)
+- [ ] [Object-Oriented Paradigm](/object-oriented-pattern-javascript-php-classes/)
 

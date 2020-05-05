@@ -5,6 +5,8 @@ import Layout from '../layout'
 import PostListing from '../components/PostListing'
 import config from '../../data/SiteConfig'
 
+// https://www.gatsbyjs.org/starters/scttcper/gatsby-casper/
+
 export default class TagTemplate extends Component {
   render() {
     const { tag } = this.props.pageContext
@@ -45,7 +47,7 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
-            tags
+            tags 
             categories
             thumbnail {
               childImageSharp {

@@ -1,4 +1,4 @@
-import Typography from "typography"
+/*import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = () => {
@@ -20,4 +20,9 @@ if (process.env.NODE_ENV !== `production`) {
 
 export default typography
 export const rhythm = typography.rhythm
-export const scale = typography.scale
+export const scale = typography.scale */
+import Typography from "typography"
+import fairyGateTheme from "typography-theme-fairy-gates"
+const typography = new Typography(fairyGateTheme)
+export const { scale, rhythm, options } = typography
+export default typography

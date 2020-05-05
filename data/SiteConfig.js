@@ -6,6 +6,7 @@ const config = {
     siteUrl: 'https://steve.abodah.fr/',
     repo: 'https://github.com/tryptich',
     pathPrefix: '',
+    postsPerPage: 12,
     dateFromFormat: 'YYYY-MM-DD',
     dateFormat: 'MMMM Do, YYYY',
     siteDescription:
@@ -13,8 +14,8 @@ const config = {
     siteRss: '/rss.xml',
     googleAnalyticsID: 'G-F7HWS3Z9RX',
     postDefaultCategoryID: 'Tech',
-    newsletter: 'https://taniarascia.substack.com',
-    newsletterEmbed: 'https://taniarascia.substack.com/embed',
+    newsletter: '',
+    newsletterEmbed: '',
     userName: 'Steve Ruben',
     userEmail: 'steve@abodah.fr',
     userTwitter: 'steveruben2015',
