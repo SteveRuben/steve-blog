@@ -1,6 +1,6 @@
-# steve.abodah.fr
+# [blog](steve.abodah.fr)
 
-Steve Ruben's personal website running on Gatsby, React, and Node.js.
+personal [blog](steve.abodah.fr) running on Gatsby, React, and Node.js.
 
 ## Note
 
