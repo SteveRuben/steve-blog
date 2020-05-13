@@ -20,6 +20,7 @@ tags:
     Si ce n’est pas encore cassé, essaye plus fort.
     Philosophie Chaos Engineering, 2015
 
-La discipline d’ingénierie du chaos a été initiée par (Netflix)[https://medium.com/@NetflixTechBlog] et le principe a été défini sur http://principlesofchaos.org/
+La discipline d’ingénierie du chaos a été initiée par [Netflix](https://medium.com/@NetflixTechBlog) et le principe a été défini sur [Ici](http://principlesofchaos.org/)
 
 *Discipline de l’expérimentation sur un système distribué afin de renforcer la confiance dans la capacité du système à résister à des conditions turbulentes en production.*
+
