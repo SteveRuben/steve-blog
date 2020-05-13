@@ -1,6 +1,6 @@
-# [blog](steve.abodah.fr)
+# [blog](https://www.steve.abodah.fr)
 
-personal [blog](steve.abodah.fr) running on Gatsby, React, and Node.js.
+personal [blog](https://www.steve.abodah.fr) running on Gatsby, React, and Node.js.
 
 ## Note
 
