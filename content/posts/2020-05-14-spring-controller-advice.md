@@ -1,8 +1,8 @@
 ---
 date: 2020-05-14
-title: 'Career Notes for Engineers and Designers - Part 1'
+title: 'Spring give you an advice'
 template: post
-thumbnail: '../images/career.png'
+thumbnail: '../images/spring.png'
 slug: spring-controller-advice
 published: true
 categories:
@@ -12,4 +12,7 @@ tags:
   - First step
 ---
     Spring give you an advice
-L'annotation `@ControllerAdvice` 
+L'annotation `@ControllerAdvice` est une annonation fournie par Spring qui permet de gérer les exceptions 
+de manière generale dans l'ensemble de l'application.
+
+le but de ce tutoriel est d'expliquer le fonctionnement de l'annotation.
