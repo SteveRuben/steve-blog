@@ -1,7 +1,7 @@
 const config = {
-    siteTitle: 'Steve Ruben',
-    siteTitleShort: 'Steve Ruben',
-    siteTitleAlt: 'Steve Ruben',
+    siteTitle: 'Steve Blog',
+    siteTitleShort: 'Steve Blog',
+    siteTitleAlt: 'Steve Blog',
     siteLogo: '/logo/logo-1024.png',
     siteUrl: 'https://steve.abodah.fr/',
     repo: 'https://github.com/tryptich',

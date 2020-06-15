@@ -1,0 +1,10 @@
+import projects from '../../data/projects'
+import speaking from '../../data/speaking'
+import podcasts from '../../data/podcasts'
+import quotes from '../../data/quotes'
+import tania from '../../content/images/profile.jpg'
+
+import EmailForm from '../components/EmailForm'
+import PostListing from '../components/PostListing'
+import ProjectListing from '../components/ProjectListing'
+import SimpleListing from '../components/SimpleListing'
