@@ -2,9 +2,15 @@ import React from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Wrapper } from "./styles"
 
-const NavbarLinks = (desktop, links) => (
-  <Wrapper desktop={desktop}>
-    {links.map(link => (
+const ConsoleLog = ({ children }) => {
+  console.log(children);
+  return false;
+};
+
+const NavbarLinks = (links = [] ) => (
+  <Wrapper>
+    { links && links.links >  0 ? 
+    links.links.map(link => (
       <AnchorLink
         href="{link.link}"
         key={link.name}
@@ -12,8 +18,7 @@ const NavbarLinks = (desktop, links) => (
         activeClassName="active"
       >
         {link.name}
-      </AnchorLink>
-    ))}
+      </AnchorLink> )) : "Loading" }
   </Wrapper>
 )
 

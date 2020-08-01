@@ -7,7 +7,7 @@ import { Wrapper } from "./styles"
 const Navbar = menu => (
   <Wrapper as={Container}>
     <Link to="/">{menu.siteTitle}</Link>
-    <NavbarLinks desktop links={menu.menuLinks}/>
+    <NavbarLinks links={menu.menuLinks}/>
   </Wrapper>
 )
 

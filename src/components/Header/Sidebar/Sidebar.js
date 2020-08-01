@@ -4,7 +4,8 @@ import { Wrapper } from './styles';
 
 const Sidebar = ({ menu, sidebar, toggle }) => (
     <Wrapper active={sidebar} onClick={toggle}>
-      <NavbarLinks menuLinks={menu.menuLinks} />
+      {console.log(menu.menuLinks)}
+      <NavbarLinks links={menu.menuLinks} />
     </Wrapper>
   );
   
