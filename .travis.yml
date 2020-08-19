@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+ - 10.16.3
+branches:
+  only:
+    - master
+cache:
+  directories:
+  - node_modules
+before_script:
+  - "npm i -g gatsby-cli"
+  - "yarn"
+script:
+  - gatsby build
+env:
+  global:
+    - "FTP_USER=travis@abodah.fr"
+    - "FTP_PASSWORD=Simple@Gospel."
+after_success:
+  find . -type d \( -path "./.*" -o -path "./node_modules" \) -prune -o -name "*" -print -exec curl --ftp-create-dirs -T {} ftp://steve.abodah.fr/test/ --user ${SFTP_USER}:${SFTP_PASSWORD} \;
