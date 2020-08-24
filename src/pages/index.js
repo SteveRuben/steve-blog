@@ -40,7 +40,7 @@ export default class Index extends Component {
                   open source
                 </a>{" "}
                 projects and <Link to="/blog">writing</Link> about modern
-                JavaScript, Node.js, and development.
+                software development.
               </p>
               <div className="social-buttons">
                 <GitHubButton
